@@ -24,9 +24,8 @@ body {
     position: sticky;
     top: 0;
     background-color: white;
-
-
 }
+
 
 .contents__2 {
     display: flex;
@@ -146,9 +145,10 @@ body {
 
 .intro {
     display: flex;
-
+    flex-wrap: wrap;
     padding: 20px;
     justify-content: space-evenly;
+    align-items: center;
     background-color: #00D352;
     border-radius: 15px;
     margin-top: 60px;
@@ -156,11 +156,15 @@ body {
 
 .intro__add img {
     border-radius: 10px;
+    width: 400px;
+    height: auto;
 }
 
 
 
 .intro__offer {
+    width: 350px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,7 +196,7 @@ button {
 
     cursor: pointer;
     margin-top: 30px;
-   
+
 }
 
 .interest p {
@@ -201,22 +205,27 @@ button {
 
 .interest__img {
     display: flex;
-    height: 200px;
-    width: 200px;
-    gap: 40px;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
     cursor: pointer;
 
 }
 
 
+
+
+
 .interest__img1 img {
     border-radius: 20px;
     margin-top: 30px;
+    width: 250px;
+    height: 250px;
 }
 
 
 .recommended {
-    margin-top: 150px;
+    margin-top: 20px;
 }
 
 .recommended p {
@@ -224,34 +233,57 @@ button {
 }
 
 
+.place__card img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.place__card {
+    width: 200px;
+    background-color: crimson;
+    padding: 20px;
+    border-radius: 30px;
+
+}
+
+
 .recommended__container {
     margin-top: 10px;
     display: flex;
+    justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
     cursor: pointer;
     border-radius: 10px;
 }
 
+
+
 .donate {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 30px;
     padding: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: 80px;
+    
     background-color: brown;
     border-radius: 20px;
     cursor: pointer;
 }
 
 .donate__img img {
+    height: 400px;
+    width: 400px;
     border-radius: 20px;
-    display: flex;
-    align-items: center;
+   
 }
 
 
-.donate__about {}
+.donate__about {
+    width:400px ;
+    height: auto;
+}
 
 .donate__heading {
     font-size: 40px;
@@ -272,8 +304,18 @@ button {
     font-weight: bolder;
 }
 
+.iconicplace__img img{
+    margin-top: 10px;
+     width: 250px;
+    height: 250px;
+    border-radius: 20px;
+  
+
+}
+
 .iconicplace__images {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
     cursor: pointer;
@@ -288,14 +330,32 @@ button {
     cursor: pointer;
 }
 
+.footer__one__s1{
+    width: 400px;
+
+}
+
+.footer__one__s2{
+    width: 400px;
+    
+}
+
 .footer__one {
     display: flex;
+    flex-wrap: wrap;
     gap: 70px;
+    
 
 }
 
 .footer__two {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content:space-between;
     align-items: center;
+}
+
+.footer__two h1{
+    width: 600px;
 }
